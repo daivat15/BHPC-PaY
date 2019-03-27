@@ -4,30 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetDetailsActivity">
+    tools:context=".PaymentConfirmationActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="Username"
         android:textSize="20sp"
         android:layout_margin="16dp"
         android:textColor="@color/colorBlack"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/name_textView"/>
+        android:id="@+id/payementUserame_textView"/>
 
     <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/name_textView"
+        app:layout_constraintTop_toBottomOf="@id/payementUserame_textView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
-        android:id="@+id/name_editText"
+        android:id="@+id/payementUsername_editText"
         android:textColor="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
         android:inputType="text"
@@ -36,28 +36,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bank Account Number"
+        android:text="Amount"
         android:textSize="20sp"
         android:layout_margin="16dp"
         android:textColor="@color/colorBlack"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name_editText"
-        android:id="@+id/accountNumber_textView"/>
+        app:layout_constraintTop_toBottomOf="@id/payementUsername_editText"
+        android:id="@+id/amount_textView"/>
 
     <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/accountNumber_textView"
+        app:layout_constraintTop_toBottomOf="@id/amount_textView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
-        android:id="@+id/accountNumber_editText"
+        android:id="@+id/amount_editText"
         android:textColor="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textCursorDrawable="@drawable/cursor"/>
 
     <TextView
@@ -68,20 +68,20 @@
         android:layout_margin="16dp"
         android:textColor="@color/colorBlack"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/accountNumber_editText"
-        android:id="@+id/securityPin_textView"/>
+        app:layout_constraintTop_toBottomOf="@id/amount_editText"
+        android:id="@+id/payementSecurityPin_textView"/>
 
     <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/securityPin_textView"
+        app:layout_constraintTop_toBottomOf="@id/payementSecurityPin_textView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
-        android:id="@+id/securityPin_editText"
+        android:id="@+id/payementSecurityPin_editText"
         android:textColor="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
         android:inputType="numberPassword"
@@ -90,41 +90,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm Security Pin"
-        android:textSize="20sp"
-        android:layout_margin="16dp"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/securityPin_editText"
-        android:id="@+id/confirmSecurityPin_textView"/>
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/confirmSecurityPin_textView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        android:id="@+id/confirmSecurityPin_editText"
-        android:textColor="@color/colorPrimary"
-        android:backgroundTint="@color/colorPrimary"
-        android:inputType="numberPassword"
-        android:textCursorDrawable="@drawable/cursor"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SIGN UP"
+        android:text="PAY"
         android:textSize="20sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/confirmSecurityPin_editText"
-        android:id="@+id/signUp_textView"/>
+        app:layout_constraintTop_toBottomOf="@id/payementSecurityPin_editText"
+        android:id="@+id/pay_textView"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
